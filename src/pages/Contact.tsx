@@ -80,7 +80,7 @@ const Contact = () => {
                         <span className='flex items-center gap-2'>
                             {item.number} <span className='text-xs'>({item.label})</span>
                         </span>
-                        <button className='ms-auto'>Load</button>
+                        <a className='ms-auto' href={`sms:${item.number}?body=Hey ${contact.name}, just checking in!`}>Load</a>
                     </div>
                 )
             })}
